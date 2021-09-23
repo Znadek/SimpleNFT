@@ -13,8 +13,8 @@ namespace SimpleNFTTests {
     #endif
     [System.ComponentModel.Description("SimpleNFTContract")]
     interface SimpleNFTContract {
-        bool changeString(string str);
-        byte[] getString();
+        bool changeString(string tokenId, string str);
+        string getString(string tokenId);
         void updateContract(byte[] nefFile, string manifest);
         string symbol();
         System.Numerics.BigInteger decimals();
@@ -22,14 +22,14 @@ namespace SimpleNFTTests {
         System.Numerics.BigInteger balanceOf(Neo.UInt160 owner);
         Neo.VM.Types.InteropInterface tokensOf(Neo.UInt160 owner);
         bool transfer(Neo.UInt160 to, byte[] tokenId, object @data);
-        void mint(byte[] tokenId, string message);
+        void mint(string tokenId, string message);
         void burn(byte[] tokenId);
         Neo.UInt160 ownerOf(byte[] tokenId);
         Neo.VM.Types.InteropInterface tokens();
         string properties(byte[] tokenId);
         void destroy();
         interface Events {
-            void ChangeString(Neo.UInt160 arg1, string arg2);
+            void ChangeString(string arg1, string arg2);
             void Transfer(Neo.UInt160 arg1, Neo.UInt160 arg2, System.Numerics.BigInteger arg3, byte[] arg4);
         }
     }

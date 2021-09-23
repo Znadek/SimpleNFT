@@ -21,12 +21,12 @@ namespace SimpleNFT
         private static Transaction Tx => (Transaction) Runtime.ScriptContainer;
 
         [DisplayName("ChangeString")]
-        public static event Action<UInt160, string> OnChangeString;
+        public static event Action<string, string> OnChangeString;
 
-        public static bool ChangeString(string str)
+        public static bool ChangeString(string tokenId, string str)
         {
-            ContractStorage.Put(Tx.Sender, str);
-            OnChangeString(Tx.Sender, str);
+            ContractStorage.Put(tokenId, str);
+            OnChangeString(tokenId, str);
             return true;
         }
 
@@ -39,9 +39,9 @@ namespace SimpleNFT
             }
         }
 
-        public static string GetString()
+        public static string GetString(string tokenId)
         {
-            return ContractStorage.Get(Tx.Sender);
+            return ContractStorage.Get(tokenId);
         }
 
         public static void UpdateContract(ByteString nefFile, string manifest)
@@ -99,10 +99,10 @@ namespace SimpleNFT
             return true;
         }
 
-        public static void Mint(ByteString tokenId, string message)
+        public static void Mint(string tokenId, string message)
         {
             ContractStorage.Put(tokenId, message);
-            OnChangeString(Tx.Sender, message);
+            OnChangeString(tokenId, message);
         }
 
         public static void Burn(ByteString tokenId)

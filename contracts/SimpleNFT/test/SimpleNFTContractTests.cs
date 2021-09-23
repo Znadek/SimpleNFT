@@ -52,7 +52,7 @@ namespace SimpleNFTTests
             // loads them into the engine and executes it 
             using var engine = new TestApplicationEngine(snapshot, settings, alice);
 
-            engine.ExecuteScript<SimpleNFTContract>(c => c.changeString("ciao"));
+            engine.ExecuteScript<SimpleNFTContract>(c => c.changeString("1", "ciao"));
 
             engine.State.Should().Be(VMState.HALT);
             engine.ResultStack.Should().HaveCount(1);
@@ -62,7 +62,7 @@ namespace SimpleNFTTests
             engine.Notifications.Should().HaveCount(1);
             engine.Notifications[0].EventName.Should().Be("NumberChanged");
             engine.Notifications[0].State[0].Should().BeEquivalentTo(alice);
-            engine.Notifications[0].State[1].Should().BeEquivalentTo(42);
+            engine.Notifications[0].State[1].Should().BeEquivalentTo("1");
 
             // ensure correct storage item was created 
             var storages = snapshot.GetContractStorages<SimpleNFTContract>();
