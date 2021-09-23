@@ -1,0 +1,12 @@
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\bin\Debug\net5.0\SimpleNFTContract.deps.json
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\bin\Debug\net5.0\SimpleNFTContract.dll
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\bin\Debug\net5.0\ref\SimpleNFTContract.dll
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\bin\Debug\net5.0\SimpleNFTContract.pdb
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.csproj.AssemblyReference.cache
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.AssemblyInfoInputs.cache
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.AssemblyInfo.cs
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.csproj.CoreCompileInputs.cache
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.dll
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\ref\SimpleNFTContract.dll
+E:\Projects\SimpleNFT\contracts\SimpleNFT\src\obj\Debug\net5.0\SimpleNFTContract.pdb
