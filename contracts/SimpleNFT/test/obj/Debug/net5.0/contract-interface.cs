@@ -28,6 +28,9 @@ namespace SimpleNFTTests {
         Neo.VM.Types.InteropInterface tokens();
         string properties(byte[] tokenId);
         void destroy();
+        void callFile();
+        void callback(string url, string userdata, System.Numerics.BigInteger code, string result);
+        string getRequstData();
         interface Events {
             void ChangeString(string arg1, string arg2);
             void Transfer(Neo.UInt160 arg1, Neo.UInt160 arg2, System.Numerics.BigInteger arg3, byte[] arg4);

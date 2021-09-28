@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4RMbSKrDsHwq7znCI1zt5OBfFYqhgaQZ7jRg6+GcUsYZPyc7EQYN/juaJD7KYHWGEZZChQEgPtDT1urYRA5bQQ==",
+  "dgSpecHash": "a9wC7pL5gnimN1JGSalAGUz94i2wfwoMxAXFKmm3Cgdo7d0b/jARLoeDdvsCHK1JGN2xXI2IsEgjmLpfkOmu3w==",
   "success": true,
   "projectFilePath": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
   "expectedPackageFiles": [

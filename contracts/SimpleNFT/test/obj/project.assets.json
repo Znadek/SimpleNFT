@@ -8127,23 +8127,26 @@
   },
   "packageFolders": {
     "C:\\Users\\muccy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
+      "projectUniqueName": "e:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
       "projectName": "SimpleNFTContractTests",
-      "projectPath": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
+      "projectPath": "e:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
       "packagesPath": "C:\\Users\\muccy\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\obj\\",
+      "outputPath": "e:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\muccy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -8221,7 +8224,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

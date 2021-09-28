@@ -7,14 +7,16 @@ using Neo.SmartContract.Framework;
 using Neo.SmartContract.Framework.Native;
 using Neo.SmartContract.Framework.Services;
 
+
 namespace SimpleNFT
 {
     [DisplayName("Znadek.SimpleNFTContract")]
-    [ManifestExtra("Author", "Your name")]
-    [ManifestExtra("Email", "your@address.invalid")]
-    [ManifestExtra("Description", "Describe your contract...")]
+    [ManifestExtra("Author", "Mattia Braga")]
+    [ManifestExtra("Email", "mattia.braga.91@gmail.com")]
+    [ManifestExtra("Description", "Test examples")]
     public class SimpleNFTContract : SmartContract
     {
+        static readonly string PreData = "RequstData";
         private static StorageMap ContractStorage => new StorageMap(Storage.CurrentContext, "Storage");
         private static StorageMap ContractMetadata => new StorageMap(Storage.CurrentContext, "Metadata");
 
@@ -145,5 +147,39 @@ namespace SimpleNFT
             if (address is null || !address.IsValid)
                 throw new Exception("The argument \"" + addressDescription + "\" is invalid");
 		}
+
+        public static void CallFile()
+        {
+            Runtime.Log("start");
+            string url = "https://raw.githubusercontent.com/neo-project/examples/master/csharp/Oracle/example.json"; // the content is  { "value": "hello world" }
+            string filter = "$.value";  // JSONPath format https://github.com/atifaziz/JSONPath
+            string callback = "callback"; // callback method
+            object userdata = "userdata"; // arbitrary type
+            long gasForResponse = 50000000;//Oracle.MinimumResponseFee;
+
+            Oracle.Request(url, filter, callback, userdata, gasForResponse);
+            Runtime.Log("end");
+        }
+
+// https://github.com/neo-project/examples/blob/master/csharp/Oracle/OracleDemo.cs
+        public static void Callback(string url, string userdata, OracleResponseCode code, string result)
+        {
+            Runtime.Log("start callback");
+            //if (ExecutionEngine.CallingScriptHash != Oracle.Hash) throw new Exception("Unauthorized!");
+            if (code != OracleResponseCode.Success) throw new Exception("Oracle response failure with code " + (byte)code);
+
+            object ret = StdLib.JsonDeserialize(result); // [ "hello world" ]
+            object[] arr = (object[])ret;
+            string value = (string)arr[0];
+
+            Runtime.Log("userdata: " + userdata);
+            Runtime.Log("response value: " + value);
+        }
+
+        public static string GetRequstData()
+        {
+            Runtime.Log("GetRequstData");
+            return Storage.Get(Storage.CurrentContext, PreData);
+        }
     }
 }
