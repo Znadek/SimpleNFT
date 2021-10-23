@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a9wC7pL5gnimN1JGSalAGUz94i2wfwoMxAXFKmm3Cgdo7d0b/jARLoeDdvsCHK1JGN2xXI2IsEgjmLpfkOmu3w==",
+  "dgSpecHash": "IGNfeKIv2cUvLtZAXjreNOB/zcVddI9jjNeFi8Lyx17ScSBgBq219ZJ+JCiNvKJyWVksPq3DcEBLwSNZdfOf9w==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
+  "projectFilePath": "e:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\test\\SimpleNFTContractTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muccy\\.nuget\\packages\\akka\\1.4.21\\akka.1.4.21.nupkg.sha512",
     "C:\\Users\\muccy\\.nuget\\packages\\bouncycastle.netcore\\1.8.8\\bouncycastle.netcore.1.8.8.nupkg.sha512",

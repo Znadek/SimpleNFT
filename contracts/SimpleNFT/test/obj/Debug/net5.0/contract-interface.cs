@@ -29,7 +29,7 @@ namespace SimpleNFTTests {
         string properties(byte[] tokenId);
         void destroy();
         void callFile();
-        void callback(string url, string userdata, System.Numerics.BigInteger code, string result);
+        void callback(string url, byte[] userData, System.Numerics.BigInteger code, byte[] result);
         string getRequstData();
         interface Events {
             void ChangeString(string arg1, string arg2);

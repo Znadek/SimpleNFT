@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TRzX7GZUd5XLJSqPXfcbdi/8FW64fTtTlBpt5g8IUhU1Jcfjo+zxeW5EdgzcfZ+12glb1RAu74kJRFVD2UzYaQ==",
+  "dgSpecHash": "KJyr0nw7HG+qZv3qAwwdXhIpLCW9yePogvsX9eFjMN+mX8CEdFEcOgUVM2MlLt9BE2WXuvQqJHhTax7wdkjKdw==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\src\\SimpleNFTContract.csproj",
+  "projectFilePath": "e:\\Projects\\SimpleNFT\\contracts\\SimpleNFT\\src\\SimpleNFTContract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muccy\\.nuget\\packages\\neo.smartcontract.framework\\3.0.0\\neo.smartcontract.framework.3.0.0.nupkg.sha512"
   ],
